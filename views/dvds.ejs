@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">	
+</head>
+<body>
+	<div class="container">
+		<table class="table table-striped">
+			<tr>
+				<th>Title</th>
+				<th>Award</th>
+			</tr>
+			<% dvds.forEach(function(dvd, index) { %>
+			<tr>
+				<td> <%= dvd.title %></td>
+				<td> <%= dvd.award %></td>
+			</tr>
+			<% }); %>
+		</table>
+
+	</div>
+</body>
+</html>
